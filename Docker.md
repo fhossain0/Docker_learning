@@ -1,5 +1,7 @@
 # Before understanding the docker first understand the karnel 
 # Kernel in Operating Systems (OS)
+# The karnel in the opareting system is an softwere 
+
 
 A **kernel** is the **core part** of an operating system. It acts as a **bridge between hardware and software applications**. The kernel is responsible for managing critical system functions:
 
@@ -19,4 +21,23 @@ A **kernel** is the **core part** of an operating system. It acts as a **bridge 
 
 💡 **Example**:  
 In Linux, the **Linux kernel** is the central part that makes your computer work, managing memory, processes, and devices efficiently.
+
+# Do Only Macs Have a Kernel?
+
+No, **all operating systems have a kernel**, not just macOS. The kernel is an essential part of any OS because it manages the hardware and provides services to software applications.
+
+## Examples of Kernels in Different OS
+
+| OS Type     | Kernel Example                         |
+|------------|----------------------------------------|
+| Windows    | Windows NT kernel                       |
+| Linux      | Linux kernel                            |
+| macOS      | XNU kernel (used in macOS & iOS)       |
+| Android    | Linux kernel (modified for mobile)     |
+| Unix       | Unix kernel                             |
+
+💡 **Key Point:**  
+Even though the **implementation differs**, the kernel exists in **every OS**. It allows programs to safely access CPU, memo
+
+
 
