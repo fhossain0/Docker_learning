@@ -56,4 +56,14 @@ namespaces → for process and filesystem isolation.
 UnionFS / OverlayFS → for lightweight filesystem layers.
 So Docker containers on Linux are native, very fast, and lightweight.
 
+2. How Docker does it
+Docker Desktop (on Mac or Windows) automatically starts a small Linux virtual machine (VM) in the background.
+All your Linux containers actually run inside that VM, but Docker makes it transparent—you don’t usually notice it.
+Example: Running docker run ubuntu on a Mac:
+Behind the scenes, Docker launches the container inside the Linux VM.
+You still interact with it as if it’s native on your Mac.
+
+Docker Desktop manages the VM
+When you install Docker Desktop on Mac or Windows, it automatically creates a small Linux VM in the background.
+
 
