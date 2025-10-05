@@ -12,3 +12,6 @@ Containers share the host OS kernel, so they are lighter and start faster.
 More efficient for running apps, but cannot run a completely different OS inside.
 Example: Docker, Podman.
 Analogy: Like renting rooms in a single house (host OS) where everyone shares the same utilities but can decorate and use the space independently.
+
+![Hypervisor vs Docker](https://drive.google.com/uc?export=view&id=14wb2N_fU1ZE7W98i4pUGOmsIt0ENzrFt)
+
