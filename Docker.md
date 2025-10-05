@@ -48,5 +48,12 @@ We call Docker “native” on Linux because it runs directly on the Linux kerne
 On Linux: Docker containers use the host’s kernel directly, so there’s no extra layer.
 On Mac or Windows: Docker requires a Linux VM, so it’s not truly native there—it runs through the VM.
 
+1. Origin
+Docker was first released in 2013 as a Linux-based container platform.
+It leverages Linux kernel features like:
+cgroups (control groups) → for resource isolation.
+namespaces → for process and filesystem isolation.
+UnionFS / OverlayFS → for lightweight filesystem layers.
+So Docker containers on Linux are native, very fast, and lightweight.
 
 
