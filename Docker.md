@@ -39,5 +39,10 @@ No, **all operating systems have a kernel**, not just macOS. The kernel is an es
 💡 **Key Point:**  
 Even though the **implementation differs**, the kernel exists in **every OS**. It allows programs to safely access CPU, memo
 
+# Containers Sharing the Kernel
+- All Containers on a Docker host use the same underlying kernel of the host OS.
+- If your host OS is Ubuntu Linux, every container uses Ubuntu’s Linux kernel.
+- Containers do not run their own separate kernel like a virtual machine would.
+
 
 
