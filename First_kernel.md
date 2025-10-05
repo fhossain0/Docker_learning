@@ -66,4 +66,17 @@ You still interact with it as if it’s native on your Mac.
 Docker Desktop manages the VM
 When you install Docker Desktop on Mac or Windows, it automatically creates a small Linux VM in the background.
 
+1. Docker uses the host OS kernel
+Docker containers share the host OS kernel.
+Example: On Linux, all containers use the Linux kernel of the host.
+On Mac/Windows, Docker runs a small Linux VM, and containers share that VM’s Linux kernel.
+You cannot run a completely different kernel inside a container. For instance, you can’t run Windows kernel inside Linux Docker.
+2. Why this isn’t a disadvantage
+Docker’s goal is not full OS virtualization, unlike virtual machines (VMs).
+The main purpose of Docker is to:
+Package applications with all dependencies.
+Run them anywhere in a consistent environment.
+Run many containers efficiently on the same host.
+So the fact that containers share the kernel is actually an advantage, because it makes them lighter and faster than virtual machines.
+
 
