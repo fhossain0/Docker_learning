@@ -44,5 +44,9 @@ Even though the **implementation differs**, the kernel exists in **every OS**. I
 - If your host OS is Ubuntu Linux, every container uses Ubuntu’s Linux kernel.
 - Containers do not run their own separate kernel like a virtual machine would.
 
+We call Docker “native” on Linux because it runs directly on the Linux kernel without needing a virtual machine.
+On Linux: Docker containers use the host’s kernel directly, so there’s no extra layer.
+On Mac or Windows: Docker requires a Linux VM, so it’s not truly native there—it runs through the VM.
+
 
 
