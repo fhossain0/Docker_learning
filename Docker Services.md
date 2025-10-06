@@ -1,0 +1,26 @@
+# Docker Introduction - Key Points
+
+- Setting up an End-to-End application stack with multiple technologies (Node.js, MongoDB, Redis, Ansible) caused compatibility issues.
+- Compatibility issues arose between services, libraries, and the underlying OS.
+- Application architecture changes required repeated compatibility checks (“Matrix from Hell”).
+- New developers had difficulty setting up environments due to OS and version differences.
+- Different development, test, and production environments caused inconsistency.
+- **Docker solves these issues:**
+  - Allows each component to run in a **separate container** with its own dependencies.
+  - Containers share the same OS kernel but remain isolated.
+  - Developers only need Docker installed; no need to worry about underlying OS differences.
+- Containers have existed for ~10 years (LXC, LXD, LXCFS); Docker simplifies their use.
+- Operating systems consist of a kernel and software; Docker containers share the kernel and include only necessary software.
+- Docker can run different Linux distributions on the same host but cannot run a different kernel (e.g., Windows container on Linux host requires a VM).
+- Docker is not meant to virtualize OSs but to package, containerize, and ship applications consistently.
+- **Differences between VMs and containers:**
+  - Containers: lightweight (MBs), fast to start, share kernel, less isolation.
+  - VMs: heavy (GBs), slower to start, full isolation, can run different OSs.
+- Containers and VMs can be used together for large environments: multiple containers can run on a single VM.
+- Docker Hub provides pre-built images for common OSs, databases, and services.
+- Running applications is simple using `docker run` commands.
+- **Images vs Containers:**
+  - Images are templates.
+  - Containers are running instances of images.
+- Developers and operations teams collaborate via Dockerfiles to ensure consistent deployment.
+- Docker supports DevOps culture by making deployment predictable and portable across environments.
