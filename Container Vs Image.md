@@ -1,7 +1,9 @@
 # Docker image 
+Also called 
 - Package
 - Template
 - Plan
+
 Image is used to create one or more containers
 
 # Container 
